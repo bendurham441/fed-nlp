@@ -2,3 +2,5 @@ pdfs/
 urls*.txt
 *.zip
 *.csv
+.~lock*
+__pycache__/
