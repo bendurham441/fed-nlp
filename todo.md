@@ -6,3 +6,5 @@
 - use other sentiment dictionaries
 - set this up on other computer
 - store csvs safely and centrally
+- transcripts pre 1999
+- speeches pre-2006
