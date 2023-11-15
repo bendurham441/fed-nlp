@@ -8,5 +8,6 @@
 - store csvs safely and centrally
 - transcripts pre 1999
 - speeches pre-2006
+- remove laughter, other things of the like
 
 http://rstudio-pubs-static.s3.amazonaws.com/79360_850b2a69980c4488b1db95987a24867a.html
