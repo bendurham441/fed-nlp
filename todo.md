@@ -11,5 +11,10 @@
 - remove "References" section from speeches
 - remove numbers, remaining punctuation
 - remove NaNs
+- make readme
+    - instructions to reproduce
+    - file descriptions
+    - required packages and how to set up conda
+    - acknowledgements
 
 http://rstudio-pubs-static.s3.amazonaws.com/79360_850b2a69980c4488b1db95987a24867a.html
