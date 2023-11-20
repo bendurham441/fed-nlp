@@ -1,5 +1,7 @@
 # To do
 
+- deal with unicode characters in speeches, perhaps in a generalized function that can be applied in multiple places
+- ODE filtering, filter out utterances likely to be procedural, like in Shapiro and Wilson
 - Find a way to only include governors, and voting members [see this link](https://www.stlouisfed.org/open-vault/2022/nov/fomc-voting-rotation-explained)
 - consider dropping tfidf below some threshold
 - use other sentiment dictionaries
