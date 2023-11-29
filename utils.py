@@ -1,16 +1,7 @@
 
-# def test():
-    # print('test')
-
-
-# def other():
-    # print('thing')
-
-
 def process(raw_string, stemmer=None):
     from nltk import word_tokenize
     from nltk.corpus import stopwords
-
     import string
 
 
