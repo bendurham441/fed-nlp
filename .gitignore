@@ -1,6 +1,10 @@
 pdfs/
 urls*.txt
 *.zip
-*.csv
 .~lock*
 __pycache__/
+
+transcripts/*.csv
+working-csvs/*.csv
+data collection/*.csv
+hansen-replication/*.csv
