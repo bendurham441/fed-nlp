@@ -6,5 +6,6 @@ __pycache__/
 
 transcripts/*.csv
 working-csvs/*.csv
-data collection/*.csv
+data-collection/*.csv
+old-data-collection/*.csv
 hansen-replication/*.csv
