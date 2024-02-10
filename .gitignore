@@ -9,3 +9,5 @@ working-csvs/*.csv
 data-collection/*.csv
 old-data-collection/*.csv
 hansen-replication/*.csv
+
+other/
