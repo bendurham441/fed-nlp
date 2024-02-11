@@ -20,13 +20,13 @@ def setup_enhance(bigrams_path, trigrams_path):
     import os
     bigrams = set()
 
-    with open(os.path.join('ngrams', 'bigrams')) as bg_file:
+    with open(bigrams_path) as bg_file:
         for bg in bg_file.readlines():
             bigrams.add(bg.strip())
 
     trigrams = set()
 
-    with open(os.path.join('ngrams', 'trigrams')) as tg_file:
+    with open(trigrams_path) as tg_file:
         for tf in tg_file.readlines():
             trigrams.add(tf.strip())
 
@@ -43,3 +43,13 @@ def ngram_enhance(raw_string, bigrams, trigrams):
             to_add.append('_'.join(tg.split(' ')))
 
     return raw_string + ' ' + ' '.join(to_add)
+
+
+def enhance(string_col, bigrams_path, trigrams_path, dict_path, stemmer='porter'):
+    from gensim.corpora import Dictionary
+    
+    bigrams, trigrams = setup_enhance(bigrams_path, trigrams_path)
+    return string_col.map(lambda x : ngram_enhance)
+
+
+# dict = Dictionary.load('../models/12-10dict')
