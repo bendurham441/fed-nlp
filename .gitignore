@@ -13,3 +13,5 @@ hansen-replication/*.csv
 other/
 
 *.xlsx
+
+*.tex
