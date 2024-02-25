@@ -1,0 +1,1 @@
+These two stopword lists come from https://sraf.nd.edu/textual-analysis/stopwords/
