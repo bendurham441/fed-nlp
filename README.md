@@ -1,6 +1,6 @@
 # Groupthink and Conformity in the FOMC in Unfavorable Economic Conditions
 
-This is a repository containing code for my honors thesis analyzing the difference between the informational content of FOMC transcripts and speeches made by FOMC governors.
+This is a repository containing code for my honors thesis investigating the potency of groupthink in the Federal Open Market Committee and how this groupthink might vay based on economic conditions.
 
 ## Files
 
@@ -24,7 +24,7 @@ This is a repository containing code for my honors thesis analyzing the differen
 - `utils.py` contains a select few utility functions that I want to be able to use in multiple notebooks.
 
 ## Note
-I do not use version control to track changes to my working csv files. They can be very large, and also the files in this repository contain the code needed to replicate them anyway. I also do not track the speech pdfs in this repository for similar reasons.
+I do not use version control to track changes to most of my working csv files. They can be very large, and also the files in this repository contain the code needed to replicate them anyway. I also do not track the speech pdfs in this repository for similar reasons.
 
 ## Instructions on how to reproduce the results
 1. Run `get_transcripts.ipynb` to fetch the transcripts in PDF form and store them in `data-collection/pdfs`.
