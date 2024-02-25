@@ -11,3 +11,5 @@ old-data-collection/*.csv
 hansen-replication/*.csv
 
 other/
+
+*.xlsx
