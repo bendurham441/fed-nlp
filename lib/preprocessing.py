@@ -1,12 +1,16 @@
 
-def process(raw_string, stemmer=None, drop_numbers=True, drop_punct=True):
+def process(raw_string, stemmer=None, drop_numbers=True, drop_punct=True, stopwords=None):
     from nltk import word_tokenize, wordpunct_tokenize
-    from nltk.corpus import stopwords
+    from nltk.corpus import stopwords as nltkstops
     import string
+
+    stopword_list = nltkstops.words('english')
+    if stopwords != None:
+        stopword_list = stopwords
 
     final = str(raw_string).lower()
     tokens = word_tokenize(final) if not drop_punct else wordpunct_tokenize(final)
-    final = [word for word in tokens if word not in stopwords.words('english')]
+    final = [word for word in tokens if word not in stopword_list]
     if drop_numbers:
         final = [token for token in final if not token.isnumeric()]
     if stemmer:
