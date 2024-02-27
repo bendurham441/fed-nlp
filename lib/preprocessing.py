@@ -55,5 +55,8 @@ def enhance(string_col, bigrams_path, trigrams_path, dict_path, stemmer='porter'
     bigrams, trigrams = setup_enhance(bigrams_path, trigrams_path)
     return string_col.map(lambda x : ngram_enhance)
 
-
-# dict = Dictionary.load('../models/12-10dict')
+def load_stopwords(path):
+    stopwords = []
+    with open(path, 'r') as f:
+        stopwords.extend([line.strip() for line in f])
+    return stopwords
