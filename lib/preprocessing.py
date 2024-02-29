@@ -8,6 +8,8 @@ def process(raw_string, stemmer=None, drop_numbers=True, drop_punct=True, stopwo
     if stopwords != None:
         stopword_list = stopwords
 
+    stopword_list.extend(['."', '--', ".''", 'i', 'don'])
+
     final = str(raw_string).lower()
     tokens = word_tokenize(final) if not drop_punct else wordpunct_tokenize(final)
     final = [word for word in tokens if word not in stopword_list]
