@@ -1,6 +1,6 @@
 # Groupthink and Conformity in the FOMC in Unfavorable Economic Conditions
 
-This is a repository containing code for my honors thesis investigating the potency of groupthink in the Federal Open Market Committee and how this groupthink might vay based on economic conditions.
+This is a repository containing code for my mathematical economics honors thesis at Gettysburg College investigating the potency of groupthink in the Federal Open Market Committee and how this groupthink might vary based on economic conditions.
 
 ## Files
 
@@ -21,13 +21,14 @@ This is a repository containing code for my honors thesis investigating the pote
 - `todo.md` contains various ideas I have on things I want to try.
 - `topic_cyclicality.ipynb` ranks the LDA topics according to their differences in share of discussion during recessions versus all other times in order to get a measure of cyclicality.
 - `topic_modelling.ipynb` creates the actual LDA topic model and stores it in the models folder.
-- `utils.py` contains a select few utility functions that I want to be able to use in multiple notebooks.
+
 
 ## Note
-I do not use version control to track changes to most of my working csv files. They can be very large, and also the files in this repository contain the code needed to replicate them anyway. I also do not track the speech pdfs in this repository for similar reasons.
+I do not use version control to track changes to most of my working csv files. They can be very large, and also the files in this repository contain the code needed to replicate them anyway. I also do not track the transcript pdfs in this repository for similar reasons.
 
 ## Instructions on how to reproduce the results
-1. Run `get_transcripts.ipynb` to fetch the transcripts in PDF form and store them in `data-collection/pdfs`.
-2. Run `extract_transcripts.ipynb` to extract the speech from the transcripts in "utterance" form and store them in `working-csvs/raw_transcripts.csv`.
-3. Run `ngrams/common_ngrams.ipynb` to identify possible terminology bigrams and trigrams and store these in `ngrams/bigrams` and `ngrams/trigrams`, respectively.
+1. Run `data-collection/get_transcripts.ipynb` to fetch the transcripts in PDF form and store them in `data-collection/pdfs`.
+2. Run `data-collection/extract_transcripts.ipynb` to extract the speech from the transcripts in "utterance" form and store them in `working-csvs/raw_transcripts.csv`.
+3. Run `transcript-subdiv` to extract only the economic situation round and the policy round.
+4. Run `ngrams/common_ngrams.ipynb` to identify possible terminology bigrams and trigrams and store these in `ngrams/bigrams` and `ngrams/trigrams`, respectively.
 
